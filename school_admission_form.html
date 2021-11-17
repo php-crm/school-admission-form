@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>School Admission Form</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="row">
+  <div class="col-75">
+    <div class="container1">
+      <center><h2>School Admission Form</h2></center>
+      <form action="submit_phpcrm_form.php" method="POST">
+        <div class="row">
+          <div class="col-50">
+            <input type="text" id="name" name="name" required placeholder="Pupil's Name in Full">  
+          </div>
+          <div class="col-50">
+            <input type="radio" required name="gender" value="MALE">MALE
+          &nbsp;<input type="radio" required name="gender" value="FEMALE">FEMALE
+          </div>
+         </div>
+            <div class="row">
+              <div class="col-50">
+                <input type="text" id="name" name="father_name" placeholder="Father's Name">  
+              </div>     
+         </div>
+         <div class="row">
+             <div class="col-50">
+                 <input type="text" name="father_occupation" required placeholder="Father's Occupation">
+             </div>
+             <div class="col-50">
+                <input type="text" name="nationality" required placeholder="Nationality">
+            </div>
+         </div>
+         <div class="row">
+            <div class="col-50">
+              <input type="email" name="parents_email" required placeholder="Parents email address">
+            </div>
+            <div class="col-50">
+              <input type="number" name="parents_phone" required placeholder="Parent's Contact No.">
+           </div>
+        </div>
+         &nbsp;Pupils Date of Birth
+        <div class="row">
+            <div class="col-50">
+                <input type="date" name="pupils_date" required >
+            </div>
+            <div class="col-50">
+               <input type="text" name="birth_place" placeholder="Place of Birth">
+           </div>
+        </div>
+    
+        <div class="row">
+           <div class="col-50">
+            <label>Religion</label>
+            <select name="religion" >
+              <option value="Hinduism">Hinduism</option>
+              <option value="Islam ">Islam </option>
+              <option value="Christianity ">Christianity </option>
+              <option value="Sikhism ">Sikhism </option>
+              <option value="Buddhism ">Buddhism </option>
+            </select>
+          </div>
+          <div class="col-50">
+            <label>Class</label>
+            <select name="class" >
+              <option value="I">I</option>
+              <option value="II">II</option>
+              <option value="III">III</option>
+              <option value="IV">IV</option>
+              <option value="V">V</option>
+              <option value="VI">VI</option>
+              <option value="VII">VII</option>
+              <option value="VIII">VIII</option>
+              <option value="IX">IX</option>
+              <option value="X">X</option>
+            </select>
+          </div>
+      </div>
+       <div class="row">
+        <div class="col-50">
+            <input type="text" name="last_school" placeholder="Name of last school / college attended">
+        </div>
+        <div class="col-50">
+          <input type="radio" name="result" value="Promoted (passed)">Promoted (passed)<br><br>
+          <input type="radio" name="result" value="Failed">Failed<br><br>
+      </div>
+      </div>
+        <div class="row">
+            <div class="col-50">
+                <input type="text" name="reason" placeholder="Reason for leaving last school">
+            </div>
+            <div class="col-50">
+                <input type="text" name="local_guardian" placeholder="Local Guardian Name and Address">
+           </div>
+        </div>
+        <div class="row">
+          <div class="col-50"><textarea name="fulladdress" id="address" required cols="30" rows="3" placeholder="Residential Address"></textarea></div>
+        </div>
+        <input type="submit" value="Submit Application" class="btn">
+       </div>
+       </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
